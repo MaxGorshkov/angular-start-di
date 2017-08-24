@@ -1,4 +1,4 @@
-import { IAppService } from './app.component.service';
+import { IAppService } from './app.service';
 
 export class AppServiceMock implements IAppService {
     GetMode(): string {

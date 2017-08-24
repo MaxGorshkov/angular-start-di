@@ -1,6 +1,6 @@
 import { AppComponent } from './app.component';
-import { AppService } from './app.component.service';
-import { AppServiceMock } from './app.component.service.mock';
+import { AppService } from './app.service';
+import { AppServiceMock } from './app.service.mock';
 import { environment } from '.././environments/environment';
 
 export const appServiceFactory = () => {

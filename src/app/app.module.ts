@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppServiceProvider } from './app.component.service.provider';
+import { AppServiceProvider } from './app.service.provider';
 
 @NgModule({
   declarations: [
