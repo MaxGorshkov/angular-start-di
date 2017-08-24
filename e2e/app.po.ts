@@ -8,4 +8,8 @@ export class AppPage {
   getParagraphText() {
     return element(by.css('app-root h1')).getText();
   }
+
+  getParagraphText2() {
+    return element(by.css('app-root h2')).getText();
+  }
 }
