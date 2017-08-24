@@ -11,10 +11,10 @@ import { AppService } from './app.component.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private service : AppService){
+  constructor(private service: AppService) {
   }
 
-  getMode():string{
+  getMode(): string {
       return this.service.GetMode();
   }
 }
