@@ -1,20 +1,15 @@
 import { AppComponent } from './app.component';
-import { AppService } from './app.service';
-import { AppServiceMock } from './app.service.mock';
-import { environment } from '.././environments/environment';
+import { IAppService } from './app.service';
+import { environment } from '../environments/environment';
 
 export const appServiceFactory = () => {
     const env = environment;
 
-    if (env.useMock) {
-        return new AppServiceMock();
-    } else {
-        return new AppService();
-    }
+    return new env.Services.IAppService();
 };
 
 export let AppServiceProvider = {
-    provide: AppService,
+    provide: IAppService,
     useFactory: appServiceFactory,
     deps: []
 };

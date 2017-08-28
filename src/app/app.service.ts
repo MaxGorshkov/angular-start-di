@@ -1,5 +1,5 @@
-export interface IAppService {
-    GetMode(): string;
+export abstract class IAppService {
+    public abstract GetMode(): string;
 }
 
 export class AppService implements IAppService {

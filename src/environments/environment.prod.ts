@@ -1,4 +1,8 @@
+import { AppService } from '../app/app.service';
+
 export const environment = {
   production: true,
-  useMock: false,
+  Services: {
+    IAppService: AppService,
+  }
 };

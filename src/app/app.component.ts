@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AppService } from './app.service';
+import { IAppService } from './app.service';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { AppService } from './app.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private service: AppService) {
+  constructor(private service: IAppService) {
   }
 
   getMode(): string {

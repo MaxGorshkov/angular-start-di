@@ -1,4 +1,8 @@
+import { AppServiceMock } from '../app/app.service.mock';
+
 export const environment = {
     production: false,
-    useMock: true,
+    Services: {
+      IAppService: AppServiceMock,
+    }
   };
